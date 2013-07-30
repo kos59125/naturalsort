@@ -12,6 +12,6 @@ Description:
     It is typically seen when operating systems lists file names.
     For example, a sequence a-1.png, a-2.png, a-10.png looks naturally ordered
     because 1 < 2 < 10 and natural sort algorithm arranges so whereas general sort algorithms arrange
-    it into a-1.png, a-10.png, a-2.png owing to their third characters.
+    it into a-10.png, a-1.png, a-2.png owing to their third and fourth characters.
 License: BSD 3-clause License
 BugReports: https://github.com/kos59125/naturalsort/issues
