@@ -1,4 +1,5 @@
-*.Rcheck/
 *.tar.gz
+*.zip
+
+*.Rcheck/
 .Rproj.user/
-.Rproj.user
