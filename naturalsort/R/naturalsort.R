@@ -22,12 +22,9 @@ naturalorder <- function(text, decreasing=FALSE, na.last=TRUE) {  # different wi
    
    tokenList <- strsplit(text, "(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)", perl=TRUE)
    maxLength <- max(sapply(tokenList, length))
-   tokenList <- sapply(tokenList, function(tokens) c(tokens, rep("", maxLength - length(tokens))))
-   if (NCOL(tokenList) == 1) {  # all elements contains only characters or only digits (or length(text) == 1)
-      tokenList <- data.frame(tokenList, stringsAsFactors=FALSE)
-   } else {
-      tokenList <- as.data.frame(t(tokenList), stringsAsFactors=FALSE)
-   }
+   tokenList <- lapply(tokenList, function(tokens) c(tokens, rep("", maxLength - length(tokens))))
+   tokenList <- Reduce(rbind, tokenList, matrix(, 0, maxLength))
+   tokenList <- as.data.frame(tokenList, stringsAsFactors=FALSE)
    
    ranks <- lapply(tokenList, function(tokens) {
       isInteger <- grepl("^\\d+$", tokens, useBytes=TRUE)
