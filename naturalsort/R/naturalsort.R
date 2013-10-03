@@ -11,6 +11,10 @@ naturalorder <- function(text, decreasing=FALSE, na.last=TRUE) {  # different wi
    if (!is.character(text)) {
       text <- as.character(text)
    }
+   if (length(text) == 0L) {
+      return(integer(0L))
+   }
+   
    sign <- (-1L) ^ decreasing
    removingNA <- is.na(na.last)  # used at last to remove NAs
    ## na.last | (is.na(na.last) || na.last)
