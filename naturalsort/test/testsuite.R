@@ -73,3 +73,11 @@ test_that("checks naturalsort() with default parameters", {
    actual <- naturalsort(text)
    expect_that(actual, equals(expected))
 })
+
+for (issue in list.files((function() {
+   path <- (function() attr(body(sys.function(-1)), "srcfile"))()$filename
+   dirname(path)
+})(), "issue-\\d+.R", full.names=TRUE)) {
+   cat("Checking", sub("\\.R$", "", basename(issue)), fill=TRUE)
+   tryCatch(test_file(issue), error=function(ex) print(ex))
+}
