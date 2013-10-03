@@ -14,6 +14,8 @@ Usage
 -----
 
 ```r
+library(naturalsort)
+
 ## Simple example.
 text <- c("a1.png", "a2.png", "a10.png")
 print(naturalsort(text))
