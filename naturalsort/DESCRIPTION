@@ -1,8 +1,8 @@
 Package: naturalsort
 Type: Package
 Title: Natural Ordering
-Version: 0.1
-Date: 2013-07-26
+Version: 0.1.1
+Date: 2013-10-03
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
 Description:
@@ -12,6 +12,6 @@ Description:
     It is typically seen when operating systems lists file names.
     For example, a sequence a-1.png, a-2.png, a-10.png looks naturally ordered
     because 1 < 2 < 10 and natural sort algorithm arranges so whereas general sort algorithms arrange
-    it into a-10.png, a-1.png, a-2.png owing to their third and fourth characters.
+    it into a-1.png, a-10.png, a-2.png owing to their third and fourth characters.
 License: BSD 3-clause License
 BugReports: https://github.com/kos59125/naturalsort/issues

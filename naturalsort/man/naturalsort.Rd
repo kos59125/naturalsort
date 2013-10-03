@@ -22,7 +22,7 @@ naturalsort(text, decreasing=FALSE, na.last=NA)
 \details{
 The functions handle adjascent digits as an integer during comparison.
 For example, a vector \code{c("a-1.png", "a-2.png", "a-10.png")} seems natural for humans.
-If you apply \code{sort} function to the vector, the result will be \code{c("a-10.png", "a-1.png", "a-2.png")} owing to third and fourth characters of the elements (1., 2., 10 in the case).
+If you apply \code{sort} function to the vector, the result will be \code{c("a-1.png", "a-10.png", "a-2.png")} owing to third and fourth characters of the elements (1., 2., 10 in the case).
 \code{naturalsort} considers not digits but numbers (1, 2, 10 in the case) so that results should look natural for humans.
 }
 \value{
