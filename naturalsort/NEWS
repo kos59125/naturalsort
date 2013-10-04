@@ -1,0 +1,6 @@
+Version 0.1.1
+-------------
+
+* [bugfix] Returns several NAs when argument is just one element (#1)
+* [bugfix] Produces an error when all elements are empty character (#2)
+* [bugfix] Produces an error when input is empty (#3)
