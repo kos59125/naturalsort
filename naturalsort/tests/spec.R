@@ -1,3 +1,8 @@
+stopifnot(require(testthat))
+context("specification")
+
+library(naturalsort)
+
 test_that("checks naturalorder(decreasing=FALSE, na.last=TRUE)", {
    text <- c("a1.png", "a2.png", "a10.png", NA, "a1-1.png")
    expected <- c(5L, 1L, 2L, 3L, 4L)
