@@ -2,6 +2,7 @@ Package: naturalsort
 Type: Package
 Title: Natural Ordering
 Version: 0.1.1
+Suggests: testthat
 Date: 2013-10-03
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>

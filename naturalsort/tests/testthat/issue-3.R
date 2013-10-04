@@ -1,4 +1,6 @@
-test_that("issue#3: produces an error when input is empty", {
+context("issue#3")
+
+test_that("Produces an error when input is empty", {
    text <- character(0)
    expected <- character(0)
    actual <- naturalsort(text)
