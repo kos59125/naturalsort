@@ -10,6 +10,12 @@ Installation
 install.packages("naturalsort")
 ```
 
+For `devtools` users, run:
+
+```r
+install_github("kos59125/naturalsort", subdir="naturalsort")
+```
+
 Usage
 -----
 
