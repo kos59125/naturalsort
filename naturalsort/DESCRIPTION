@@ -1,9 +1,9 @@
 Package: naturalsort
 Type: Package
 Title: Natural Ordering
-Version: 0.1.1
+Version: 0.1.2
 Suggests: testthat
-Date: 2013-10-03
+Date: 2014-01-25
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
 Description:
@@ -14,5 +14,5 @@ Description:
     For example, a sequence a-1.png, a-2.png, a-10.png looks naturally ordered
     because 1 < 2 < 10 and natural sort algorithm arranges so whereas general sort algorithms arrange
     it into a-1.png, a-10.png, a-2.png owing to their third and fourth characters.
-License: BSD 3-clause License
+License: BSD_3_clause + file LICENSE
 BugReports: https://github.com/kos59125/naturalsort/issues

@@ -1,3 +1,9 @@
+Version 0.1.2
+-------------
+
+* [update] Includes the LICENSE file in the package.
+* [bugfix] Fixes tests.
+
 Version 0.1.1
 -------------
 
