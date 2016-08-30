@@ -5,6 +5,6 @@
 \alias{naturalsort-package}
 \title{Natural Ordering Sort}
 \description{
-The package provides functions related to natural ordering.
+Provides functions related to natural ordering.
 }
 

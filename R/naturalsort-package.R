@@ -1,6 +1,6 @@
 #' Natural Ordering Sort
 #' 
-#' The package provides functions related to natural ordering.
+#' Provides functions related to natural ordering.
 #'
 #' @name naturalsort-package
 #' @docType package

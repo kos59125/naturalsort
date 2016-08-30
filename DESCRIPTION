@@ -4,10 +4,10 @@ Title: Natural Ordering
 Version: 0.1.3
 Suggests:
     testthat
-Date: 2016-08-29
+Date: 2016-08-30
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
-Description: The package provides functions related to human natural ordering.
+Description: Provides functions related to human natural ordering.
     It handles adjacent digits in a character sequence as a number so that
     natural sort function arranges a character vector by their numbers, not digit
     characters. It is typically seen when operating systems lists file names. For
