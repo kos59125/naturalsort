@@ -69,3 +69,20 @@ test_that("checks naturalsort() with default parameters", {
    actual <- naturalsort(text)
    expect_that(actual, equals(expected))
 })
+
+test_that("naturalfactor() without levels", {
+   text <- c("a1.png", "a2.png", "a10.png")
+   expected <- c("a1.png", "a2.png", "a10.png")
+   f <- naturalfactor(text)
+   actual <- levels(f)
+   expect_that(actual, equals(expected))
+})
+
+test_that("naturalfactor() with levels", {
+   text <- c("a1.png", "a2.png", "a10.png")
+   levels <- c("a1.png", "a10.png")
+   expected_factors <- c("a1.png", NA, "a10.png")
+   f <- naturalfactor(text, levels = levels)
+   expect_that(levels(f), equals(levels))
+   expect_that(as.character(f), equals(expected_factors))
+})

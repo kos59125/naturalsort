@@ -1,18 +1,20 @@
 Package: naturalsort
 Type: Package
 Title: Natural Ordering
-Version: 0.1.2
-Suggests: testthat
-Date: 2014-01-25
+Version: 0.1.3
+Suggests:
+    testthat
+Date: 2016-08-29
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
-Description:
-    The package provides functions related to human natural ordering.
-    It handles adjacent digits in a character sequence as a number
-    so that natural sort function arranges a character vector by their numbers, not digit characters.
-    It is typically seen when operating systems lists file names.
-    For example, a sequence a-1.png, a-2.png, a-10.png looks naturally ordered
-    because 1 < 2 < 10 and natural sort algorithm arranges so whereas general sort algorithms arrange
-    it into a-1.png, a-10.png, a-2.png owing to their third and fourth characters.
+Description: The package provides functions related to human natural ordering.
+    It handles adjacent digits in a character sequence as a number so that
+    natural sort function arranges a character vector by their numbers, not digit
+    characters. It is typically seen when operating systems lists file names. For
+    example, a sequence a-1.png, a-2.png, a-10.png looks naturally ordered because 1
+    < 2 < 10 and natural sort algorithm arranges so whereas general sort algorithms
+    arrange it into a-1.png, a-10.png, a-2.png owing to their third and fourth
+    characters.
 License: BSD_3_clause + file LICENSE
 BugReports: https://github.com/kos59125/naturalsort/issues
+RoxygenNote: 5.0.1
