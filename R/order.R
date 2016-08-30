@@ -1,3 +1,27 @@
+#' Natural Ordering Sort
+#' 
+#' Natural ordering is a kind of alphanumerical ordering.
+#' \code{naturalorder} returns the order of the argument character #' vector in human natural ascending or descending order.
+#' \code{naturalsort} returns the sorted vector.
+#' 
+#' @param text
+#' a character vector to sort.
+#' @param decreasing
+#' logical.
+#' @param na.last
+#' logical. If \code{NA}, \code{NA}s will be removed of the result.
+#' 
+#' @return
+#' For \code{naturalorder}, the results are indices of vector elements in natural order.
+#' For \code{naturalsort}, the results are sorted vectors.
+#' 
+#' @examples
+#' text <- c("a-1.png", "a-2.png", "a-10.png")
+#' print(sort(text))
+#' print(naturalsort(text))
+#'
+#' @rdname naturalsort
+#' @export
 naturalorder <- function(text, decreasing=FALSE, na.last=TRUE) {  # different with base::order in order or arguments
    if (!is.logical(decreasing) || length(decreasing) != 1) {
       decreasing <- as.logical(decreasing)[1]
@@ -60,8 +84,4 @@ naturalorder <- function(text, decreasing=FALSE, na.last=TRUE) {  # different wi
       result <- result[!(result %in% which(is.na(text)))]
    }
    result
-}
-
-naturalsort <- function(text, decreasing=FALSE, na.last=NA) {
-   text[naturalorder(text, decreasing=decreasing, na.last=na.last)]
 }
